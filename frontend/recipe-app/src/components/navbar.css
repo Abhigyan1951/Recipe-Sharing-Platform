@@ -1,0 +1,7 @@
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: black;
+    font-size: 16;
+}
