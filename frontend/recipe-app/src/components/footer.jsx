@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function footer(){
+export default function Footer(){
     return(
-        <div className='footer'>
+        <footer className='footer'>
             <p>@copyright imaginary engineering</p>
-        </div>
+        </footer>
     )
 }
