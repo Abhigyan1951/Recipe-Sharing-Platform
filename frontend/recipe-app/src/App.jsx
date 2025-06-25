@@ -25,12 +25,15 @@ const getMyRecipe=async()=>{
   return allRecipes.filter(item=>item.createdBy===user?._id)
 }
 const router=createBrowserRouter([
-  {path:"/",element:<Navigation/>,children:[
+  {path:"/",element:<Navigation/>,
+    errorElement:<h2>Page Not Found</h2>,
+    children:[
     {path:"/",element:<Home/>,loader:getAllRecipes},
     {path:"/myRecipe",element:<Home/>,loader:getMyRecipe},
     {path:"/favRecipe",element:<Home/>},
     {path:"/addRecipe",element:<AddItems/>},
     {path:"/editrecipe/:id",element:<Edit/>},
+   
   ]}
 
 ])
